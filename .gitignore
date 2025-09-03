@@ -1,0 +1,43 @@
+# PHP specific
+*.log
+*.cache
+*.tmp
+*.temp
+
+# Configuration files with sensitive data
+config.php
+.env
+*.env
+
+# Dependencies
+vendor/
+node_modules/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# XAMPP specific
+htdocs/
+xampp/
+
+# Database files
+*.sql
+*.db
+
+# Upload directories (if any)
+uploads/
+temp/
+
+# Session files
+sessions/
+
+# Backup files
+*.bak
+*.backup

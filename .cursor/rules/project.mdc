@@ -1,0 +1,90 @@
+# Jobs CRM Project Rules
+
+## Project Overview
+Professional Jobs CRM system with admin and user interfaces. UI-first approach with dynamic functionality.
+
+## Technical Stack
+- **Frontend**: HTML5, CSS3, JavaScript (Vanilla)
+- **Backend**: PHP (XAMPP environment)
+- **Database**: MySQL
+- **Real-time**: WebSockets (no polling intervals)
+- **UI Framework**: Custom responsive design
+
+## Core Features
+
+### Admin Panel
+- Job creation with required fields
+- SLA (Service Level Agreement) time setting
+- Job management dashboard
+- Vendor management
+- Chat system per vendor
+
+### User Interface
+- Jobs listing page
+- Individual job view with details
+- Add vendor functionality per job
+- Vendor-specific chat areas
+- Real-time notifications based on SLA
+
+### Database Structure
+- Jobs table (id, title, description, sla_time, status, created_at)
+- Vendors table (id, job_id, name, contact, details, created_at)
+- Messages table (id, job_id, vendor_id, sender_type, message, timestamp)
+- Users table (id, username, role, created_at)
+
+## UI/UX Guidelines
+- Modern, clean interface
+- Responsive design (mobile-first)
+- Professional color scheme
+- Intuitive navigation
+- Real-time updates without page refresh
+- Chat interface similar to modern messaging apps
+
+## Development Approach
+1. **Phase 1**: Professional UI/UX design
+2. **Phase 2**: Dynamic JavaScript functionality
+3. **Phase 3**: PHP backend integration
+4. **Phase 4**: Database implementation
+5. **Phase 5**: Real-time features with WebSockets
+
+## File Structure
+```
+jobs-crm/
+├── assets/
+│   ├── css/
+│   ├── js/
+│   └── images/
+├── includes/
+│   ├── config.php
+│   ├── database.php
+│   └── functions.php
+├── admin/
+│   ├── dashboard.php
+│   ├── add-job.php
+│   └── manage-jobs.php
+├── user/
+│   ├── jobs-list.php
+│   ├── job-view.php
+│   └── add-vendor.php
+└── index.php
+```
+
+## Coding Standards
+- Semantic HTML5
+- CSS3 with Flexbox/Grid
+- Vanilla JavaScript (ES6+)
+- PHP PDO for database
+- Consistent naming conventions
+- Commented code for maintainability
+
+## Future Features (Phase 2+)
+- Visit approval system
+- Final approval workflow
+- Job completion tracking
+- Vendor payment requests
+- Advanced reporting
+- Email notifications
+description:
+globs:
+alwaysApply: true
+---
