@@ -454,9 +454,14 @@ $vendors = [
                     <div class="user-vendor-chat">
                         <div class="user-chat-header">
                             <h5>Notes about <?php echo $vendor['name']; ?></h5>
-                            <button class="user-btn-icon user-chat-toggle" title="Toggle Notes">
-                                <i class="fas fa-chevron-down"></i>
-                            </button>
+                            <div class="user-chat-actions">
+                                <button class="user-btn-icon user-chat-large" title="Open Large Chat" data-vendor-id="<?php echo $vendor['id']; ?>">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <button class="user-btn-icon user-chat-toggle" title="Toggle Notes">
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </div>
                         </div>
 
                         <div class="user-chat-container" style="display: none;">
@@ -695,6 +700,31 @@ $vendors = [
                 </button>
             </div>
         </form>
+    </div>
+</div>
+
+<!-- Large Chat Dropdown -->
+<div id="largeChatModal" class="user-large-chat-dropdown">
+    <div class="user-large-chat-header">
+        <h3 id="largeChatTitle">Chat with Vendor</h3>
+        <button class="user-btn-icon" id="closeLargeChat" title="Close">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+    
+    <div class="user-large-chat-container">
+        <div class="user-large-messages" id="largeChatMessages">
+            <!-- Messages will be loaded here -->
+        </div>
+        
+        <div class="user-large-chat-input">
+            <div class="user-input-group">
+                <input type="text" class="user-large-message-input" placeholder="Type your message..." id="largeMessageInput">
+                <button class="user-btn-icon user-send-large-message" id="sendLargeMessage">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
     </div>
 </div>
 

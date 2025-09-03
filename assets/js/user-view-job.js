@@ -95,6 +95,64 @@ function setupChatToggles() {
             }
         });
     });
+    
+    // Setup large chat modal functionality
+    setupLargeChatModal();
+}
+
+// Large Chat Modal
+function setupLargeChatModal() {
+    const largeChatButtons = document.querySelectorAll('.user-chat-large');
+    const largeChatModal = document.getElementById('largeChatModal');
+    const closeLargeChat = document.getElementById('closeLargeChat');
+    const largeChatTitle = document.getElementById('largeChatTitle');
+    const largeChatMessages = document.getElementById('largeChatMessages');
+    
+    if (largeChatButtons && largeChatModal) {
+        largeChatButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const vendorId = this.getAttribute('data-vendor-id');
+                const vendorName = this.closest('.user-vendor-card').querySelector('.user-vendor-details h4').textContent;
+                
+                // Update modal title
+                largeChatTitle.textContent = `Chat with ${vendorName}`;
+                
+                // Load messages for this vendor
+                loadVendorMessages(vendorId, largeChatMessages);
+                
+                // Show modal
+                largeChatModal.style.display = 'block';
+            });
+        });
+    }
+    
+    // Close modal
+    if (closeLargeChat) {
+        closeLargeChat.addEventListener('click', () => {
+            largeChatModal.style.display = 'none';
+        });
+    }
+    
+    // Close modal when clicking outside
+    if (largeChatModal) {
+        largeChatModal.addEventListener('click', (e) => {
+            if (e.target === largeChatModal) {
+                largeChatModal.style.display = 'none';
+            }
+        });
+    }
+}
+
+// Load vendor messages
+function loadVendorMessages(vendorId, messagesContainer) {
+    // Get messages from the small chat container
+    const vendorCard = document.querySelector(`[data-vendor-id="${vendorId}"]`);
+    const smallChatMessages = vendorCard.querySelector('.user-chat-messages');
+    
+    if (smallChatMessages && messagesContainer) {
+        // Clone messages to large modal
+        messagesContainer.innerHTML = smallChatMessages.innerHTML;
+    }
 }
 
 // Add Vendor Modal
