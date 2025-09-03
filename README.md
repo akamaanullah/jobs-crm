@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Jobs CRM System
 
 A comprehensive Customer Relationship Management system designed specifically for job management and recruitment processes.
@@ -103,3 +104,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 ⭐ Star this repository if you find it helpful!
+=======
+# jobs-crm
+>>>>>>> 00a38d3d50b7348a23a75492089335379c7ef4b3
