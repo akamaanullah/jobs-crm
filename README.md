@@ -1,7 +1,8 @@
-<<<<<<< HEAD
 # Jobs CRM System
 
 A comprehensive Customer Relationship Management system designed specifically for job management and recruitment processes.
+
+**🚧 This project is currently in active development phase. Features and functionality may change as development progresses. 🚧**
 
 ## 🚀 Features
 
@@ -92,8 +93,20 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-**Akama Anullah**
-- GitHub: [@akamaanullah](https://github.com/akamaanullah)
+**Ak Amaanullah**
+- 🌐 **Portfolio**: [amaanullah.com](https://amaanullah.com)
+- 💼 **LinkedIn**: [@akamaanullah](https://linkedin.com/in/akamaanullah)
+- 📸 **Instagram**: [@akamaanullah](https://instagram.com/akamaanullah)
+- 🐦 **Twitter**: [@akamaanullah](https://twitter.com/akamaanullah)
+- 🔧 **GitHub**: [@akamaanullah](https://github.com/akamaanullah)
+
+## 🚧 Development Status
+
+**Current Phase**: Active Development
+- Core functionality is being implemented
+- Features are being tested and refined
+- UI/UX improvements are ongoing
+- Performance optimizations in progress
 
 ## 🙏 Acknowledgments
 
@@ -104,6 +117,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 ⭐ Star this repository if you find it helpful!
-=======
-# jobs-crm
->>>>>>> 00a38d3d50b7348a23a75492089335379c7ef4b3
+
+**Note**: This project is actively being developed. Please check back regularly for updates and new features!
